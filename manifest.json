@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Platzi Conf Agenda Generator",
+  "version": "1.0",
+  "description": "Generate a personalized agenda for Platzi Conf based on user interests",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": [
+    "https://platzi.com/conf/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://platzi.com/conf/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["styles.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

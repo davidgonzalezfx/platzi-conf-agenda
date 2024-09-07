@@ -1,0 +1,30 @@
+@import 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css';
+
+/* Additional custom styles can be added here */
+.text-green-600 {
+  color: #059669;
+}
+
+.bg-green-600 {
+  background-color: #059669;
+}
+
+.hover\:bg-green-700:hover {
+  background-color: #047857;
+}
+
+.focus\:ring-green-500:focus {
+  --tw-ring-color: #10b981;
+}
+
+.focus\:border-green-500:focus {
+  border-color: #10b981;
+}
+
+.bg-platzi {
+  background-color: #1e2229;
+}
+
+.bg-platzi-dark {
+    background-color: #13161c;
+}
